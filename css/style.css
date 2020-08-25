@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #c2c3c3, #c2c3c3, #c2c3c3,  #9a9b9b, #c2c3c3,#c2c3c3,  #c2c3c3);
+}
+
+a{
+    position: relative;
+    padding: 10px 30px;
+    margin: 0 150px;
+    color: #03701e;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+/* a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(3){
+    filter: hue-rotate(270deg);
+} */
+
+a:hover{
+    background: #03701e;
+    color: white;
+    box-shadow: 0 0 50px #03701e;
+    transition-delay: 0.5s;
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #03701e;
+    border-left: 2px solid #03701e;
+    transition: 0.5s;    
+    transition-delay: 0.5s;
+}
+
+a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #03701e;
+    border-right: 2px solid #03701e;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+a:hover:after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+
+
+@media (max-width: 1343px){
+    
+    a {
+        
+        margin: 0px 85px;
+        
+    }
+}
+
+@media (max-width: 1343px){
+    a {
+        
+        margin: 0px 50px;
+        
+    }
+}
+
+
+@media (max-width: 743px){
+    a {
+        margin: 0px 40px;
+    }
+}
+
+@media (max-width: 700px){
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #c2c3c3, #c2c3c3, #c2c3c3,  #9a9b9b, #c2c3c3,#c2c3c3,  #c2c3c3);
+    }
+    
+    a{
+        margin-top: 100px;
+    }
+    
+}
+
+
+@media (max-width: 220px){
+    a {
+        font-size: 16px;
+        
+    }
+}
